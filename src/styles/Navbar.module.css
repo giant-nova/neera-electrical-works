@@ -1,0 +1,38 @@
+.navbar {
+  background-color: #000; /* Black background */
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks, .rightLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navLinks li, .rightLinks li {
+  margin-left: 20px;
+}
+
+.navLinks li:first-child, .rightLinks li:first-child {
+  margin-left: 0;
+}
+
+.navLinks a, .rightLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Optional: Add hover effect */
+.navLinks a:hover, .rightLinks a:hover {
+  color: #ccc;
+}
