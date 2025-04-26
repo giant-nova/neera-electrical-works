@@ -1,39 +1,112 @@
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
+  padding: 50px;
+  background: linear-gradient(to right, #dbeafe, #eff6ff);
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.content {
+  max-width: 600px;
+  z-index: 2;
+  animation: slideIn 1s ease forwards;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.exploreButton {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.5s, transform 0.3s;
+}
+
+.exploreButton:hover {
+  background: linear-gradient(to right, #000000, #434343);
+  transform: scale(1.05);
+}
+
+.image {
+  flex: 1;
+  z-index: 0;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Animation for content */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
   }
-  
-  .text {
-    flex: 1;
-    padding-right: 20px;
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
   }
-  
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
   }
-  
-  p {
-    color: #555;
-    margin-bottom: 20px;
+
+  .overlay {
+    display: none;
   }
-  
-  .button {
-    background-color: #000;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+
+  .content {
+    margin-top: 30px;
   }
-  
-  .imageContainer {
-    flex: 1;
+}
+
+
+.textContainer {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 1s forwards ease-in-out;
+  animation-delay: 0.3s;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  .image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+}
+
