@@ -1,0 +1,184 @@
+/* .home{
+    background-image: linear-gradient(to bottom right,#B9D9EB,  #CCCCFF);
+} */
+
+
+
+.homepage {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hero {
+    background: linear-gradient(to right, #003973, #e5e5be);
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  .heroContent h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heroContent p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .heroButton {
+    background: #ffffff;
+    color: #003973;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .heroButton:hover {
+    background: #f0f0f0;
+  }
+
+  /* Add these animations */
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInText {
+    font-size: 3rem;
+    animation: fadeIn 1.5s ease-out forwards;
+  }
+  
+  .fadeInSubtext {
+    font-size: 1.2rem;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 0.5s;
+  }  
+  
+  .categories {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+  
+  .categoryCard {
+    min-width: 200px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .categoryCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .categoryCard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .industries {
+    background: #f9f9f9;
+    padding: 4rem 2rem;
+  }
+  
+  .industryGrid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .industryItem {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    margin: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  }
+  
+  .about {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .whyUs {
+    background: #f1f1f1;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .whyGrid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .whyItem {
+    background: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  }
+  
+  .brands {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .brandLogos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .brandLogos img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .cta {
+    background: linear-gradient(to right, #1d2671, #c33764);
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  .ctaButton {
+    background: #ffffff;
+    color: #1d2671;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 2rem;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+  
+  .ctaButton:hover {
+    background: #f0f0f0;
+  }
+  
